@@ -7,9 +7,6 @@
 */
 int main(void)
 {
-srand(time(0));
-int n;
-n = rand() - RAND_MAX / 2;
 /* your code goes there */
 char c = 'a';
 
