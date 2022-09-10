@@ -7,11 +7,13 @@
 
 int main(void)
 {
-int num;
-char abc;
+int i = '0';
 
-for (num = 0; num <= 9; num++)
-putchar(num % 10 + '0');
+while (i <= '9')
+{
+putchar(i);
+i++;
+}
 putchar('\n');
 return (0);
 }
