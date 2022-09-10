@@ -7,10 +7,11 @@
 
 int main(void)
 {
-char num;
+int num;
+char abc;
 
 for (num = 0; num <= 9; num++)
-putchar(num + '0');
+putchar(num % 10 + '0');
 putchar('\n');
 return (0);
 }
