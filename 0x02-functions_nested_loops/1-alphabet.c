@@ -5,7 +5,7 @@
  * main - print alphabets in lowercase
  * Return: Always 0 (Success)
  */
-print_alphabet(void)
+void print_alphabet(void)
 {
 char alpha = 'a';
 while (alpha <= 'z')
@@ -13,6 +13,4 @@ while (alpha <= 'z')
 _putchar(alpha);
 alpha++;
 _putchar('\n');
-}
-return (0);
 }
