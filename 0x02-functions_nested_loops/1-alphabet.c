@@ -12,5 +12,6 @@ while (alpha <= 'z')
 {
 _putchar(alpha);
 alpha++;
+}
 _putchar('\n');
 }
