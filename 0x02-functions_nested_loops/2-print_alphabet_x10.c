@@ -16,6 +16,6 @@ for (alpha2 = 'a'; alpha2 <= 'z'; alpha2++)
 {
 _putchar(alpha2);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
