@@ -6,6 +6,7 @@
  * @a: int type array pointer
  * @n: int type interger
  * Description: Numbers must be separated by comma, followed by a space
+ * Return: nothing
  */
 void print_array(int *a, int n)
 {
