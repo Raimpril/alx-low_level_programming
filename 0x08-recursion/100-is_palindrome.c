@@ -6,6 +6,7 @@ int is_palindrome(char *s);
 
 /**
  * find_strlen - Returns the length of a string
+ * is_palindrome - a function to print length
  * @s: The string for measurement
  * Return: The length of the string
  */
