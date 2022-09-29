@@ -1,7 +1,9 @@
 #include "main.h"
 
+int is_prime(int, int);
 /**
  * is_prime_number - returns 1 if n is a prime no
+ * is_prime - to checknprime number
  * @n: number to be returned
  * Return: 1 if n is prime or 0 if otherwise
  */
