@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _memcpy - a function that copies memory area by filling n bytes
