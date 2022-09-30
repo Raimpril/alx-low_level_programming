@@ -19,7 +19,7 @@ return (1);
 }
 for (index = 1; index < argc; index++)
 {
-multiplication = multiplication * atoi(argv[index]);
+multiplication = multiplication *atoi(argv[index]);
 }
 printf("%d\n", multiplication);
 return (0);
