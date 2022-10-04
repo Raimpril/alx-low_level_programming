@@ -3,11 +3,11 @@
 /**
  * _strdup - function that returns a pointer to a newly allocated
  * space in memory which contains a copy of the string given as a parameter
- * @s: Array of memory allocated
+ * @s: Array of elements allocated
  * Return: Always return 1
  */
 
-char *_strdup(char *str)
+char *_strlen(char *s)
 {
 unsigned int i;
 
