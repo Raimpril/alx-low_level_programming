@@ -4,7 +4,7 @@
  * create_array - a function that creates an array of chars,
  * and initializes it with a specific char
  * @c: prints char value
- * @buffer: the address of memory to print
+ * @size: the size of the array to print
  * Return: Should return pointer variable
  */
 
@@ -27,7 +27,7 @@ return (NULL);
 else
 {
 position = 0;
-while (position < size)
+while (position < size) /* while for array*/
 {
 *(buffer + position) = c;
 position++;
