@@ -12,7 +12,7 @@ int **alloc_grid(int width, int height)
 
 /* Declaring variables*/
 int **grid;
-int i, j
+int i, j;
 if (width <= 0 || height <= 0)
 {
 return (NULL);
@@ -35,7 +35,7 @@ free(grid);
 return (NULL);
 }
 }
-for (i = 0; j < width; j++)
+for (j = 0; j < width; j++)
 grid[i][j] = 0;
 return (grid);
 }
