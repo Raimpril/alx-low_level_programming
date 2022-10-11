@@ -1,0 +1,61 @@
+#include "dog.h"
+#include <stdlib.h>
+
+int _strlen(char *str);
+char *_strcopy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
+
+/**
+ * _strlen - Grts the string length
+ * @str: String
+ * Return: Returns length od string
+ */
+int _strlen(char *str)
+{
+int len = 0;
+while (*str++)
+len++;
+return (len);
+}
+
+/**
+ * _strcopy - copies string from pointer
+ * @dest: Stores the string
+ * @src: String source
+ * Return: pointer pointing to dest
+ */
+char *strcopy(char *dest, char *src)
+{
+int index = 0;
+for (index = 0; src[index]; index++)
+dest[index] = src[index];
+dest[index] = '\0';
+return (dest);
+}
+
+/**
+ * new_dog - Funtion to create a new dog
+ * @name: New name of dog
+ * @age: Age of dog
+ * @owner: Owner of new dog
+ * Return: Dog dets
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+dog_t *doggy;
+if (name == NULL || age < 0 || owner == NULL)
+return (NULL);
+doggy = malloc(sizeof(dog_t));
+if (doggy == NULL)
+return (NULL);
+
+doggy->name = malloc(sizeof(char) * (_strlen(name) + 1));
+if (doggy->name == NULL)
+{
+free(doggy);
+return (NULL);
+}
+
+doggy->
+return (dest);
+
