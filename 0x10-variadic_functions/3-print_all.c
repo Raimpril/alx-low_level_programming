@@ -30,16 +30,16 @@ j++;
 switch (format[i])
 {
 case 'c':
-printf("%c", va_arg(valist, int)), c = 1;
+printf("%c", va_arg(valist, int)), c - 1;
 break;
 case 'i':
-printf("%d", va_arg(valist, int)), c = 1;
+printf("%d", va_arg(valist, int)), c - 1;
 break;
 case 'f':
-printf("%f", va_arg(valist, double)), c = 1;
+printf("%f", va_arg(valist, double)), c - 1;
 break;
 case 's':
-str = va_arg(valist, char *), c = 1;
+str = va_arg(valist, char *), c - 1;
 if (!str)
 {
 printf("(nil)");
@@ -48,5 +48,7 @@ break;
 printf("%s", str);
 break;
 }
+i++;
 }
+printf("\n"), va_end(valist);
 }
