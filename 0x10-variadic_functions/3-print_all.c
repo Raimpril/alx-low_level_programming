@@ -16,16 +16,14 @@ unsigned int i = 0, j, c = 0;
 const char t_arg[] = "cifs";
 va_start(valist, format);
 while (format && format[i])
-{
-j = 0;
+{ j = 0;
 while (t_arg[j])
 {
 if (format[i] == t_arg[j] && c)
 {
 printf(", ");
 break;
-}
-j++;
+} j++;
 }
 switch (format[i])
 {
@@ -43,12 +41,10 @@ str = va_arg(valist, char *), c = 1;
 if (!str)
 {
 printf("(nil)");
-break;
-}
+break; }
 printf("%s", str);
 break;
+} i++;
 }
-i++;
-}
-printf("\n"), va_end(valist);
-}
+printf("\n");
+va_end(valist); }
